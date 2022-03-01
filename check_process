@@ -3,6 +3,7 @@
         domain="domain.tld"
         path="/path"
         default_home_server="matrix-client.matrix.org"
+        jitsi_server="meet.element.io"
         is_public=1
     ; Checks
         pkg_linter=1
