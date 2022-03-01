@@ -50,6 +50,16 @@
 				"default": "matrix-client.matrix.org"
 			},
 			{
+				"name": "jitsi_server",
+				"type": "string",
+				"ask": {
+					"en": "Choose a Jitsi server",
+					"fr": "Choisissez un serveur Jitsi"
+				},
+				"example": "jitsi.server.tld",
+				"default": "meet.element.io"
+			},
+			{
 				"name": "is_public",
 				"type": "boolean",
                 "help": { 
