@@ -6,7 +6,17 @@ name = "Element configuration"
     [main.config]
     name = "Configuration Options"
 
+        [main.config.default_home_server]
+        ask = "Choose a Matrix server"
+        type = "domain"
+        default = "matrix-client.matrix.org"
+        bind = "base_url:__FINALPATH__/config.json"
+
+
         [main.config.jitsi_server]
         ask = "Choose a Jitsi server"
         type = "domain"
+        default = "meet.element.io"
         bind = "preferredDomain:__FINALPATH__/config.json"
+
+

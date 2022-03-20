@@ -47,6 +47,11 @@ ynh_abort_if_errors
 #=================================================
 ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 
+if [ -z "$default_home_server" ]; then
+	default_home_server="matrix-client.matrix.org"
+	ynh_app_setting_set --app=$app --key=default_home_server --value=$default_home_server
+fi
+
 if [ -z "$jitsi_server" ]; then
 	jitsi_server="meet.element.io"
 	ynh_app_setting_set --app=$app --key=jitsi_server --value=$jitsi_server
