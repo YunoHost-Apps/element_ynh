@@ -43,8 +43,8 @@
 				"name": "default_home_server",
 				"type": "string",
 				"ask": {
-					"en": "Choose a default home server",
-					"fr": "Choisissez un serveur par défault"
+					"en": "Choose a default Matrix server",
+					"fr": "Choisissez un serveur Matrix par défault"
 				},
 				"example": "my-own-homeserver.tld",
 				"default": "matrix-client.matrix.org"
