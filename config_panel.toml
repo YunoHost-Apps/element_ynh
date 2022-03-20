@@ -1,0 +1,12 @@
+version = "1.0"
+
+[main]
+name = "Element configuration"
+
+    [main.config]
+    name = "Configuration Options"
+
+        [main.config.jitsi_server]
+        ask = "Choose a Jitsi server"
+        type = "domain"
+        bind = "preferredDomain:__FINALPATH__/config.json"

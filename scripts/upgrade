@@ -43,6 +43,16 @@ ynh_clean_setup () {
 ynh_abort_if_errors
 
 #=================================================
+# ENSURE DOWNWARD COMPATIBILITY
+#=================================================
+ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
+
+if [ -z "$jitsi_server" ]; then
+	jitsi_server="meet.element.io"
+	ynh_app_setting_set --app=$app --key=jitsi_server --value=$jitsi_server
+fi
+
+#=================================================
 # CREATE DEDICATED USER
 #=================================================
 ynh_script_progression --message="Making sure dedicated system user exists..." --weight=1
