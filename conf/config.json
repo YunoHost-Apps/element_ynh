@@ -1,5 +1,10 @@
 {
-    "default_server_name": "__DEFAULT_HOME_SERVER__",
+      "default_server_config": {
+        "m.homeserver": { "base_url": "__DEFAULT_HOME_SERVER__" },
+        "im.vector.riot.jitsi": {"preferredDomain": "jitsi.riot.im"},
+        "im.vector.riot.e2ee": {"default": true },
+        "m.identity_server": {"base_url": "https://vector.im"}
+    },
     "brand": "Element",
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",
