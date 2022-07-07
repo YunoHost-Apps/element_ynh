@@ -1,6 +1,6 @@
 {
       "default_server_config": {
-        "m.homeserver": { "base_url": "__DEFAULT_HOME_SERVER__" },
+        "m.homeserver": { "base_url": "https://__DEFAULT_HOME_SERVER__" },
         "m.identity_server": {"base_url": "https://vector.im"}
     },
     "brand": "Element",
