@@ -19,7 +19,6 @@ Element is a new type of messaging app. You choose where your messages are store
 
 **Shipped version:** 1.11.5~ynh1
 
-
 **Demo:** https://app.element.io/
 
 ## Screenshots
