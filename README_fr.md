@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # Element pour YunoHost
 
 [![Niveau d’intégration](https://dash.yunohost.org/integration/element.svg)](https://dash.yunohost.org/appci/app/element) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+
 [![Installer Element avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 
 *[Read this readme in english.](./README.md)*
