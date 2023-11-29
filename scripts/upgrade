@@ -37,6 +37,9 @@ fi
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
+	# purge the "bundles" folder to avoid pointlessly taking up space at each update
+	ynh_secure_remove --file="$install_dir/bundles/*"
+
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
