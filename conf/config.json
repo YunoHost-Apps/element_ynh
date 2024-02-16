@@ -2,7 +2,7 @@
     "default_server_config": {
         "m.homeserver": {
             "base_url": "https://__DEFAULT_HOME_SERVER__",
-            "server_name": "matrix.org"
+            "server_name": "__DEFAULT_HOME_SERVER__"
         },
         "m.identity_server": {
             "base_url": "https://vector.im"
