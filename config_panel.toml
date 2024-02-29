@@ -60,8 +60,8 @@ name.fr = "Configuration d'Element"
 
 
         [main.config.default_theme]
-        ask.en = "Disable custom URL field on login page"
-        ask.fr = "Déactiver le champ URL personnalisé sur la page login"
+        ask.en = "Default theme"
+        ask.fr = "Thème par défault"
         type = "select"
         choices = [ "light", "dark" ]
 
