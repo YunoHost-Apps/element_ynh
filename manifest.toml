@@ -5,7 +5,7 @@ name = "Element"
 description.en = "Web client for Matrix"
 description.fr = "Client web pour Matrix"
 
-version = "1.11.58~ynh1"
+version = "1.11.59~ynh1"
 
 maintainers = ["Josué Tille"]
 
@@ -14,7 +14,7 @@ license = "Apache-2.0"
 website = "https://element.io"
 demo = "https://app.element.io/"
 admindoc = "https://element.io/help"
-code = "https://github.com/vector-im/element-web/"
+code = "https://github.com/element-hq/element-web"
 cpe = "cpe:2.3:a:matrix:element"
 
 [integration]
@@ -56,9 +56,10 @@ ram.runtime = "0M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/vector-im/element-web/releases/download/v1.11.58/element-v1.11.58.tar.gz"
-        sha256 = "89bde68e908d73bc08e9b0fa2af5c66ce4dbb764a35b3c80efdc97abb8825fea"
-        autoupdate.strategy = "latest_github_tag"
+        url = "https://github.com/element-hq/element-web/releases/download/v1.11.59/element-v1.11.59.tar.gz"
+        sha256 = "443cabd2c0994b2fb1fc5775f98e3b418b9bafbfdbf75cc1e32842bd30597887"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "^element-v.*.tar.gz$"
 
     [resources.system_user]
 
