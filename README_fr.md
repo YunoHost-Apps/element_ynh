@@ -17,10 +17,9 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 ## Vue d’ensemble
 
 Element est un nouveau type d'application de messagerie. Vous choisissez où vos messages sont stockés, ce qui vous donne le contrôle de vos données. Il vous donne accès au réseau ouvert Matrix, vous pouvez donc parler à n'importe qui. Element offre un nouveau niveau de sécurité, en ajoutant la vérification des appareils par signature croisée au chiffrement de bout en bout par défaut. 
+**Version incluse :** 1.11.61~ynh1
 
-**Version incluse :** 1.11.59~ynh1
-
-**Démo :** https://app.element.io/
+**Démo :** <https://app.element.io/>
 
 ## Captures d’écran
 
@@ -28,11 +27,11 @@ Element est un nouveau type d'application de messagerie. Vous choisissez où vos
 
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://element.io>
-* Documentation officielle de l’admin : <https://element.io/help>
-* Dépôt de code officiel de l’app : <https://github.com/element-hq/element-web>
-* YunoHost Store: <https://apps.yunohost.org/app/element>
-* Signaler un bug : <https://github.com/YunoHost-Apps/element_ynh/issues>
+- Site officiel de l’app : <https://element.io>
+- Documentation officielle de l’admin : <https://element.io/help>
+- Dépôt de code officiel de l’app : <https://github.com/element-hq/element-web>
+- YunoHost Store : <https://apps.yunohost.org/app/element>
+- Signaler un bug : <https://github.com/YunoHost-Apps/element_ynh/issues>
 
 ## Informations pour les développeurs
 
@@ -40,7 +39,7 @@ Merci de faire vos pull request sur la [branche testing](https://github.com/Yuno
 
 Pour essayer la branche testing, procédez comme suit.
 
-``` bash
+```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/element_ynh/tree/testing --debug
 ou
 sudo yunohost app upgrade element -u https://github.com/YunoHost-Apps/element_ynh/tree/testing --debug
