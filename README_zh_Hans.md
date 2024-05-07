@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Element
+# YunoHost 上的 Element
 
 [![集成程度](https://dash.yunohost.org/integration/element.svg)](https://dash.yunohost.org/appci/app/element) ![工作状态](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
 
