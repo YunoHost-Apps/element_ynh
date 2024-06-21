@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -22,19 +16,19 @@ default_federate=true
 default_theme=light
 show_labs_settings=false
 
-ynh_app_setting_set --app=$app --key=disable_custom_urls --value=$disable_custom_urls
-ynh_app_setting_set --app=$app --key=disable_guests --value=$disable_guests
-ynh_app_setting_set --app=$app --key=disable_3pid_login --value=$disable_3pid_login
-ynh_app_setting_set --app=$app --key=default_country_code --value=$default_country_code
-ynh_app_setting_set --app=$app --key=brand_text --value=$brand_text
-ynh_app_setting_set --app=$app --key=default_federate --value=$default_federate
-ynh_app_setting_set --app=$app --key=default_theme --value=$default_theme
-ynh_app_setting_set --app=$app --key=show_labs_settings --value=$show_labs_settings
+ynh_app_setting_set --key=disable_custom_urls --value=$disable_custom_urls
+ynh_app_setting_set --key=disable_guests --value=$disable_guests
+ynh_app_setting_set --key=disable_3pid_login --value=$disable_3pid_login
+ynh_app_setting_set --key=default_country_code --value=$default_country_code
+ynh_app_setting_set --key=brand_text --value=$brand_text
+ynh_app_setting_set --key=default_federate --value=$default_federate
+ynh_app_setting_set --key=default_theme --value=$default_theme
+ynh_app_setting_set --key=show_labs_settings --value=$show_labs_settings
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=4
+ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
@@ -42,15 +36,15 @@ ynh_setup_source --dest_dir="$install_dir"
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
+ynh_script_progression "Adding system configurations related to $app..."
 
 # Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding a configuration file..." --weight=1
+ynh_script_progression "Adding $app's configuration..."
 
 configure_element
 
@@ -58,4 +52,4 @@ configure_element
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
