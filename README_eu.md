@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Element YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/element.svg)](https://dash.yunohost.org/appci/app/element) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/element.svg)](https://ci-apps.yunohost.org/ci/apps/element/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
 
 [![Instalatu Element YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 
@@ -18,7 +18,7 @@ EZ editatu eskuz.
 
 Element is a new type of messaging app. You choose where your messages are stored, putting you in control of your data. It gives you access to the Matrix open network, so you can talk to anyone. Element provides a new level of security, adding cross-signed device verification to default end-to-end encryption.
 
-**Paketatutako bertsioa:** 1.11.69~ynh1
+**Paketatutako bertsioa:** 1.11.70~ynh1
 
 **Demoa:** <https://app.element.io/>
 
