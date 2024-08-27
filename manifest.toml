@@ -5,7 +5,7 @@ name = "Element"
 description.en = "Web client for Matrix"
 description.fr = "Client web pour Matrix"
 
-version = "1.11.75~ynh1"
+version = "1.11.76~ynh1"
 
 maintainers = ["Josué Tille"]
 
@@ -18,7 +18,7 @@ code = "https://github.com/element-hq/element-web"
 cpe = "cpe:2.3:a:matrix:element"
 
 [integration]
-yunohost = ">= 11.2.20"
+yunohost = ">= 11.2.27"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -57,8 +57,8 @@ ram.runtime = "0M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/element-hq/element-web/releases/download/v1.11.75/element-v1.11.75.tar.gz"
-        sha256 = "eeefbabff0b4d9fcb5a4e70f1dc1d7225a915c5e4a1b0436a31110a80e13fa58"
+        url = "https://github.com/element-hq/element-web/releases/download/v1.11.76/element-v1.11.76.tar.gz"
+        sha256 = "6d7274f5db91c956cb7958550c4f30ba46ce909949824b05cfe2af0769f6dcdc"
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset = "^element-v.*.tar.gz$"
 
