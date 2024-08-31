@@ -8,59 +8,8 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression 'Ensuring downward compatibility...'
 
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=default_home_server --value='matrix.org'
-if [ -z "${default_home_server:-}" ]; then
-    default_home_server='matrix.org'
-    ynh_app_setting_set --key=default_home_server --value=$default_home_server
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=disable_custom_urls --value=false
-if [ -z "${disable_custom_urls:-}" ]; then
-    disable_custom_urls=false
-    ynh_app_setting_set --key=disable_custom_urls --value=$disable_custom_urls
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=disable_guests --value=false
-if [ -z "${disable_guests:-}" ]; then
-    disable_guests=false
-    ynh_app_setting_set --key=disable_guests --value=$disable_guests
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=disable_3pid_login --value=false
-if [ -z "${disable_3pid_login:-}" ]; then
-    disable_3pid_login=false
-    ynh_app_setting_set --key=disable_3pid_login --value=$disable_3pid_login
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=default_country_code --value=false
-if [ -z "${default_country_code:-}" ]; then
-    default_country_code=false
-    ynh_app_setting_set --key=default_country_code --value=$default_country_code
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=brand_text --value=Element
-if [ -z "${brand_text:-}" ]; then
-    brand_text=Element
-    ynh_app_setting_set --key=brand_text --value=$brand_text
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=default_federate --value=true
-if [ -z "${default_federate:-}" ]; then
-    default_federate=true
-    ynh_app_setting_set --key=default_federate --value=$default_federate
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=default_theme --value=light
-if [ -z "${default_theme:-}" ]; then
-    default_theme=light
-    ynh_app_setting_set --key=default_theme --value=$default_theme
-fi
-
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=show_labs_settings --value=false
-if [ -z "${show_labs_settings:-}" ]; then
-    show_labs_settings=false
-    ynh_app_setting_set --key=show_labs_settings --value=$show_labs_settings
-fi
+ynh_app_setting_set_default --key=default_home_server --value='matrix.org'
+set_settings_default
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -69,8 +18,9 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="config.json"
 
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R o-rwx "$install_dir"
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R "$app":www-data "$install_dir"
+chmod -R o-rwx "$install_dir"
+chown -R "$app":www-data "$install_dir"
+
 #=================================================
 # ADD A CONFIGURATION
 #=================================================

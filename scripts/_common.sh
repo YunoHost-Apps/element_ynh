@@ -7,6 +7,17 @@
 configure_element()
 {
     ynh_config_add --template="config.json" --destination="$install_dir/config.json"
-    #REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R u=rwX,g=rX,o= "$install_dir"
-    #REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
+    chmod -R u=rwX,g=rX,o= "$install_dir"
+    chown -R "$app":www-data "$install_dir"
+}
+
+set_settings_default() {
+    ynh_app_setting_set_default --key=disable_custom_urls --value=false
+    ynh_app_setting_set_default --key=disable_guests --value=false
+    ynh_app_setting_set_default --key=disable_3pid_login --value=false
+    ynh_app_setting_set_default --key=default_country_code --value=GB
+    ynh_app_setting_set_default --key=brand_text --value=Element
+    ynh_app_setting_set_default --key=default_federate --value=true
+    ynh_app_setting_set_default --key=default_theme --value=light
+    ynh_app_setting_set_default --key=show_labs_settings --value=false
 }
