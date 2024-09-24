@@ -13,3 +13,5 @@ test_format = 1.0
     # -------------------------------
 
     test_upgrade_from.26a68cb850f5886aa78671e241a897f48910f314.name = "Upgrade from 1.11.37"
+
+    test_upgrade_from.edb0ce692951b49b9c768b715e74ac98e3299171.name = "Before helper 2.1"
