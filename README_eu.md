@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Element YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/element.svg)](https://ci-apps.yunohost.org/ci/apps/element/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/element)](https://ci-apps.yunohost.org/ci/apps/element/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/element)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/element)
 
 [![Instalatu Element YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 

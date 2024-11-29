@@ -5,7 +5,9 @@
 
 # Element для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/element.svg)](https://ci-apps.yunohost.org/ci/apps/element/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/element)](https://ci-apps.yunohost.org/ci/apps/element/)
+![Состояние работы](https://apps.yunohost.org/badge/state/element)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/element)
 
 [![Установите Element с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 
