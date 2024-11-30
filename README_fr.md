@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Element pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/element.svg)](https://ci-apps.yunohost.org/ci/apps/element/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/element)](https://ci-apps.yunohost.org/ci/apps/element/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/element)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/element)
 
 [![Installer Element avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 

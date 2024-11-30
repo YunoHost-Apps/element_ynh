@@ -6,7 +6,7 @@
 
 configure_element()
 {
-    ynh_config_add --template="config.json" --destination="$install_dir/config.json"
+    ynh_config_add --jinja --template="config.json" --destination="$install_dir/config.json"
     chmod -R u=rwX,g=rX,o= "$install_dir"
     chown -R "$app":www-data "$install_dir"
 }
@@ -20,4 +20,5 @@ set_settings_default() {
     ynh_app_setting_set_default --key=default_federate --value=true
     ynh_app_setting_set_default --key=default_theme --value=light
     ynh_app_setting_set_default --key=show_labs_settings --value=false
+    ynh_app_setting_set_default --key=sso_redirect_options --value=none
 }
