@@ -67,3 +67,13 @@ ram.runtime = "0M"
 
     [resources.permissions]
     main.url = "/"
+
+    # Need to allow access freely to /bundles because for somes request the authentication (from ssowat) are not send
+    # By example the usercontent.js file is not requested with any cookie header when we try to download an attachment
+    # And so without this the request will be redirected on the SSO portail which break attachment download
+    bundles.url = "/bundles"
+    bundles.label = "Bundles resources"
+    bundles.allowed = "visitors"
+    bundles.auth_header = false
+    bundles.show_tile = false
+    bundles.protected = true

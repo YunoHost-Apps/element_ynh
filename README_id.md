@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Element untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/element.svg)](https://ci-apps.yunohost.org/ci/apps/element/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/element)](https://ci-apps.yunohost.org/ci/apps/element/)
+![Status kerja](https://apps.yunohost.org/badge/state/element)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/element)
 
 [![Pasang Element dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 

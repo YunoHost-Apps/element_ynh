@@ -71,3 +71,10 @@ name.fr = "Configuration d'Element"
         type = "boolean"
         yes = 'true'
         no = 'false'
+
+        [main.config.sso_redirect_options]
+        ask.en = "SSO redirect option"
+        ask.fr = "Option de redirection SSO"
+        type = "select"
+        choices = ["none", "on_login_page", "on_welcome_page", "immediate"]
+        default = "none"

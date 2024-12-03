@@ -1,18 +1,18 @@
 {
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://__DEFAULT_HOME_SERVER__",
-            "server_name": "__DEFAULT_HOME_SERVER__"
+            "base_url": "https://{{ default_home_server }}",
+            "server_name": "{{ default_home_server }}"
         },
         "m.identity_server": {
             "base_url": "https://vector.im"
         }
     },
-    "disable_custom_urls": __DISABLE_CUSTOM_URLS__,
-    "disable_guests": __DISABLE_GUESTS__,
+    "disable_custom_urls": {{ disable_custom_urls }},
+    "disable_guests": {{ disable_guests }},
     "disable_login_language_selector": false,
-    "disable_3pid_login": __DISABLE_3PID_LOGIN__,
-    "brand": "__BRAND_TEXT__",
+    "disable_3pid_login": {{ disable_3pid_login }},
+    "brand": "{{ brand_text }}",
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",
     "integrations_widgets_urls": [
@@ -22,11 +22,11 @@
         "https://scalar-staging.vector.im/api",
         "https://scalar-staging.riot.im/scalar/api"
     ],
-    "default_country_code": "__DEFAULT_COUNTRY_CODE__",
-    "show_labs_settings": __SHOW_LABS_SETTINGS__,
+    "default_country_code": "{{ default_country_code }}",
+    "show_labs_settings": {{ show_labs_settings }},
     "features": {},
-    "default_federate": __DEFAULT_FEDERATE__,
-    "default_theme": "__DEFAULT_THEME__",
+    "default_federate": {{ default_federate }},
+    "default_theme": "{{ default_theme }}",
     "room_directory": {
         "servers": ["matrix.org"]
     },
@@ -45,5 +45,10 @@
         "participant_limit": 8,
         "brand": "Element Call"
     },
-    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
+    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx",
+    "sso_redirect_options": {
+        "immediate": {% if sso_redirect_options == 'immediate' or sso_redirect_options == 'on_welcome_page' or sso_redirect_options == 'on_login_page' %}true{% else %}false{% endif %},
+        "on_welcome_page":  {% if sso_redirect_options == 'on_welcome_page' or sso_redirect_options == 'on_login_page' %}true{% else %}false{% endif %},
+        "on_login_page":  {% if sso_redirect_options == 'on_login_page' %}true{% else %}false{% endif %}
+    }
 }

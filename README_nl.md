@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Element voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/element.svg)](https://ci-apps.yunohost.org/ci/apps/element/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/element)](https://ci-apps.yunohost.org/ci/apps/element/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/element)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/element)
 
 [![Element met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 
