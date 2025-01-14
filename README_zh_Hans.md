@@ -20,7 +20,7 @@
 
 Element is a new type of messaging app. You choose where your messages are stored, putting you in control of your data. It gives you access to the Matrix open network, so you can talk to anyone. Element provides a new level of security, adding cross-signed device verification to default end-to-end encryption.
 
-**分发版本：** 1.11.89~ynh1
+**分发版本：** 1.11.90~ynh1
 
 **演示：** <https://app.element.io/>
 
