@@ -20,7 +20,7 @@ EZ editatu eskuz.
 
 Element is a new type of messaging app. You choose where your messages are stored, putting you in control of your data. It gives you access to the Matrix open network, so you can talk to anyone. Element provides a new level of security, adding cross-signed device verification to default end-to-end encryption.
 
-**Paketatutako bertsioa:** 1.11.94~ynh1
+**Paketatutako bertsioa:** 1.11.95~ynh1
 
 **Demoa:** <https://app.element.io/>
 
