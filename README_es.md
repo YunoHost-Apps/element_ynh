@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Element para Yunohost
+# Element para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/element)](https://ci-apps.yunohost.org/ci/apps/element/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/element)
@@ -20,7 +20,7 @@ No se debe editar a mano.
 
 Element is a new type of messaging app. You choose where your messages are stored, putting you in control of your data. It gives you access to the Matrix open network, so you can talk to anyone. Element provides a new level of security, adding cross-signed device verification to default end-to-end encryption.
 
-**Versión actual:** 1.11.95~ynh1
+**Versión actual:** 1.11.96~ynh1
 
 **Demo:** <https://app.element.io/>
 
