@@ -78,3 +78,30 @@ name.fr = "Configuration d'Element"
         type = "select"
         choices = ["none", "on_login_page", "on_welcome_page", "immediate"]
         default = "none"
+
+    [main.call]
+    name.en = "Audio and video call"
+    name.fr = "Appels audio et video"
+
+        [main.call.enable_element_call]
+        ask.en = "Use Element call for calls"
+        ask.fr = "Utiliser Element call pour les appels"
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+
+        [main.call.enable_element_call_use_exclusively]
+        ask.en = "Use exclusively"
+        help.en = "Specifying whether Element Call should be used exclusively as the only VoIP stack in the app, removing the ability to start legacy 1:1 calls or Jitsi calls."
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+        visible = "enable_element_call"
+
+        [main.call.element_call_guest_spa_url]
+        ask.en = "Guest single-page app URL"
+        help.en = "Optional URL for an Element Call single-page app (SPA), for guest links. If this is set, Element Web will expose a 'join' link for public video rooms, which can then be shared to non-matrix users. The target Element Call SPA is typically set up to use a homeserver that allows users to register without email ('passwordless guest users') and to federate. Leave it empty if you don't want to set it."
+        type = "string"
+        default = ""
+        example = "https://call.element.io"
+        visible = "enable_element_call"
