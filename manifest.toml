@@ -3,7 +3,7 @@ packaging_format = 2
 id = "element"
 name = "Element"
 description.en = "Web client for Matrix"
-description.fr = "Client web pour Matrix"
+description.fr = "Client Web pour Matrix"
 
 version = "1.11.100~ynh1"
 
