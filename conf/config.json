@@ -52,7 +52,7 @@
         "feature_element_call_video_rooms": true
     },
     "element_call": {
-        "use_exclusively": "{{ enable_element_call_use_exclusively }}"{% if element_call_guest_spa_url %},
+        "use_exclusively": {{ enable_element_call_use_exclusively }}{% if element_call_guest_spa_url %},
         "guest_spa_url": "{{ element_call_guest_spa_url }}"
         {% endif %}
     }
