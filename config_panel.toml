@@ -58,7 +58,6 @@ name.fr = "Configuration d'Element"
         yes = 'true'
         no = 'false'
 
-
         [main.config.default_theme]
         ask.en = "Default theme"
         ask.fr = "Thème par défault"
@@ -67,7 +66,7 @@ name.fr = "Configuration d'Element"
 
         [main.config.show_labs_settings]
         ask.en = "Show the experimental feature menu"
-        ask.fr = "Afficher le menu d'activation des fonctionnalités expérimentales"
+        ask.fr = "Afficher le menu des fonctions expérimentales"
         type = "boolean"
         yes = 'true'
         no = 'false'
@@ -78,3 +77,34 @@ name.fr = "Configuration d'Element"
         type = "select"
         choices = ["none", "on_login_page", "on_welcome_page", "immediate"]
         default = "none"
+
+    [main.call]
+    name.en = "Audio and video call"
+    name.fr = "Appels audio et video"
+
+        [main.call.enable_element_call]
+        ask.en = "Use Element Call for calls"
+        ask.fr = "Utiliser Element Call pour les appels"
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+
+        [main.call.enable_element_call_use_exclusively]
+        ask.en = "Use exclusively"
+        ask.fr = "Utiliser exclusivement"
+        help.en = "Specifying whether Element Call should be used exclusively as the only VoIP stack in the app, removing the ability to start legacy 1:1 calls or Jitsi calls."
+        help.fr = "Spécifier si Element Call doit être utilisé exclusivement comme la seule pile VoIP dans l'application, en supprimant la possibilité de démarrer des appels 1:1 ou des appels Jitsi."
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+        visible = "enable_element_call"
+
+        [main.call.element_call_guest_spa_url]
+        ask.en = "Optional URL for an Element Call single-page"
+        ask.fr = "URL facultative pour une application monopage"
+        help.en = "If this is set, Element Web will expose a 'join' link for public video rooms, which can then be shared to non-matrix users. The target Element Call SPA is typically set up to use a homeserver that allows users to register without email ('passwordless guest users') and to federate. Leave it empty if you don't want to set it."
+        help.fr = "Si cette option est activée, Element Web affichera un lien « joindre » pour les salles vidéo publiques, qui peuvent ensuite être partagées avec des utilisateurs ne faisant pas partie de Matrix. La cible Element Call SPA est généralement configurée pour utiliser un serveur domestique qui permet aux utilisateurs de s'inscrire sans e-mail (« utilisateurs invités sans mot de passe ») et de se fédérer. Laissez ce champ vide si vous ne souhaitez pas le paramétrer."
+        type = "string"
+        default = ""
+        example = "https://call.element.io"
+        visible = "enable_element_call"
