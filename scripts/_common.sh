@@ -22,7 +22,7 @@ set_settings_default() {
     ynh_app_setting_set_default --key=show_labs_settings --value=false
     ynh_app_setting_set_default --key=sso_redirect_options --value=none
 
-    ynh_app_setting_set_default --key=enable_element_call --value=false
+    ynh_app_setting_set_default --key=enable_element_call --value=true
     ynh_app_setting_set_default --key=enable_element_call_use_exclusively --value=false
     ynh_app_setting_set_default --key=element_call_guest_spa_url --value=''
 }

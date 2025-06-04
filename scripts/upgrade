@@ -11,6 +11,14 @@ ynh_script_progression 'Ensuring downward compatibility...'
 ynh_app_setting_set_default --key=default_home_server --value='matrix.org'
 set_settings_default
 
+# Enable only one time the parameter enable_element_call because most of user will at some point migrate to element call
+# and we want to avoid that many users just don't understand how to use element call
+# (because they don't know the existence of this settings in the config panel)
+if ynh_app_upgrading_from_version_before_or_equal_to '1.11.102~ynh1'; then
+    ynh_app_setting_set --key=enable_element_call --value=true
+    enable_element_call=true
+fi
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
