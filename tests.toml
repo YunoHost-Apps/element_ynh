@@ -15,3 +15,14 @@ test_format = 1.0
     test_upgrade_from.26a68cb850f5886aa78671e241a897f48910f314.name = "Upgrade from 1.11.37"
 
     test_upgrade_from.edb0ce692951b49b9c768b715e74ac98e3299171.name = "Before helper 2.1"
+
+    # -------------------------------
+    # Curl tests to validate that the app works
+    # -------------------------------
+    [default.curl_tests]
+    root.path = "/"
+    root.expect_title = "Element"
+    root.expect_content = "Sorry, Element requires JavaScript to be enabled."
+
+    config.path = "/config.json"
+    config.expect_content = '[.\n]*default_server_config[.\n]*m\.homeserver[.\n]*base_url[.\n]*'
